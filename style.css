@@ -70,3 +70,41 @@ body{
     height: 400px;
     margin-top: 105px;
   }
+
+  footer{
+	  background-color: #242424;
+	  height: 250px;
+  }
+
+  .z p{
+	  color: white;
+	  /* padding: 10px; */
+  }
+
+  .zz{
+	  padding: 20px 0;
+  }
+
+  .z{
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  .zx i{
+	  color: white;
+	  padding: 5px 0;
+  }
+
+  .zx{
+	  display: flex;
+	  flex-direction: column;
+
+
+  }
+
+  .container-z{
+	  display: flex;
+	  /* flex-direction: column; */
+	  justify-content: space-around;
+	  padding-top: 50px;
+  }
