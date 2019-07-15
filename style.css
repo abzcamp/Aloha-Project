@@ -1,110 +1,635 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+img{
+    max-width:100%;
 }
 
-.a,
-.b{
-    text-align: center;
-	position: relative;
-	top: calc(50% - 25px);
-    font-size: 50px;
+
+/*.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey; 
+}*/
+
+.cart-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 0;
 }
 
-body{
-    /* width: 1240px; */
+.carticon img{
+    height: 50px;
 }
+
+.nav-logo img{
+    height: 50px;
+}
+
+.nav-bar li{
+    list-style: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:  #e2574c;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav-bar a:hover{
+    color: #b64036;
+}
+
+.nav-bar{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.nav-description{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-description ul{
+    padding: 10px 20px;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+
 
 .banner {
     background: linear-gradient(
         rgba(0,0,0, 0.25) 0%,
         rgba(0,0,0,0.25) 100%
     ),
-      url('images/banner-girl.png') no-repeat center 60px,
+      url('images/banner-girl.png') no-repeat center 30px,
       url('images/flower-bkgd.jpg') repeat-x center top;
     background-size: cover, contain, cover;
     height: 400px;
-    margin-top: 105px;
+    /*margin-top: 105px;*/
   }
 
-  footer{
-	  background-color: #242424;
-	  height: 250px;
+  .banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .z p{
-	  color: white;
-	  /* padding: 10px; */
-  }
 
-  .zz{
-	  padding: 20px 0;
-  }
-
-  .z{
-	  display: flex;
-	  flex-direction: column;
-  }
-
-  .zx i{
-	  color: white;
-	  padding: 5px 0;
-  }
-
-  .zx{
-	  display: flex;
-	  flex-direction: column;
-
+  .new{
+    /*text-align: center;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    color: #ffffff;
+    padding-bottom: 20px;
 
   }
 
-  .container-z{
-	  display: flex;
-	  /* flex-direction: column; */
-	  justify-content: space-around;
-	  padding-top: 50px;
+  h1{
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0px;
   }
+
+  .year{
+     font-family: 'Playfair Display', serif;
+     text-align: center;
+     font-size: 40px;
+     margin: 0px;
+     color: #ffffff;
+     padding-bottom: 30px;
+  }
+
+  h2{
+    color: #2d2d2d;
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+
+  }
+
+  .hand-crafted{
+    margin: 50px 0;
+  }
+
+  .crafted{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  span{
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .hand-crafted p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .mens{
+    background-image: url(images/mens-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .trends{
+    background-image: url(images/trends-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-right: 5px;
+  }
+
+
+  .glasses{
+    background-image: url(images/glasses-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-left: 5px;
+  }
+
+
+.sale{
+    background-image: url(images/sale-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-right: 5px;
+}
+
+
+.bags{
+    background-image: url(images/bags-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-left: 5px;
+}
+
+
+
+.womens{
+    background-image: url(images/womens-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.mobile-mode-1,
+.mobile-mode-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-mode-2{
+    margin-top: 10px;
+}
+
+.grid-slide-inner img{
+    width: 100%;
+    height: 300px;
+}
+
+.grid-slide{
+    width: 100%;
+}
+
+.label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #969696;
+    text-align: center;
+}
+
+figcaption{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color:  #e2574c;
+    text-align: center;
+}
+
+.price{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    text-align: center;
+    color:#969696;
+}
+
+.products{
+    margin-bottom: 50px;
+}
+
+.cart-button{
+    display: none;
+}
+
+.sign-up{
+    background-image: url(images/wave-bkgd.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom, 40px;
+    height: 350px;
+}
+
+.sign-up h2{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.sign-up span{
+    color: #ffffff;
+}
+
+.updates{
+    padding-top: 50px;
+}
+
+.sign-up p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+input:focus{
+  outline: none;
+}
+
+input{
+    border: none;
+
+}
+
+.sub-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding-right: 5px;
+    border-radius: 30px;
+}
+
+.subs{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #e2574c;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer{
+    background-color: #242424;
+    height: 300px;
+}
+
+
+.cpy{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: white;
+    margin: 0px;
+}
+
+.info{
+    padding: 5px 0;
+    color: white;
+}
+
+.address{
+    color:#969696;
+    margin: 0px;
+}
+
+
+
+.footer-icons i{
+    color: white;
+    padding: 10px;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0 50px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.footer-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info a{
+    color: white;
+}
+
+.info a:hover{
+    color: #b64036;
+}
+
+.icons-description{
+    display: none;
+}
+
+.icons-description li:hover{
+    color: #b64036;
+}
+
+.footer-icons i:hover{
+    color: #b64036;
+}
+
+
+
+@media screen and (min-width: 600px){
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nav-description{
+    flex: 1;
+}
+
+.nav-description ul{
+    border:0;
+    padding: 0;
+    padding-right: 50px;
+}
+
+.cart-logo{
+    display: contents;
+}
+
+.mobile-mode-1,
+.mobile-mode-2{
+    display: contents;
+}
+
+.carticon{
+    order: 1;
+}
+
+.nav-bar a{
+    font-size: 16px;
+}
+
+.hand-crafted p{
+    font-size: 18px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+}
+
+.year{
+    font-size: 42px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 42px;
+}
+
+.new{
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.tablet-mode-1,
+.tablet-mode-2{
+    display: flex;
+}
+
+
+.mens,
+.trends,
+.glasses,
+.sale,
+.bags,
+.womens{
+    height: 150px;
+}
+
+.mens{
+    margin-right: 10px;
+    width: 106%;
+}
+
+.womens{
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.grid-slide{
+    width: 50%;
+}
+
+.footer-description{
+    flex-direction: row;
+}
+
+.sign-up p{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icons-description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.icons-description li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 9px 0;
+}
+
+.icons-description ul{
+    list-style: none;
+}
+
+.footer-icons{
+    flex-direction: column;
+    padding: 0;
+    width: 0;
+    padding-top: 50px;
+}
+
+.contact-info{
+    align-items: start;
+    width: 70%;
+}
+
+.info{
+    padding: 15px 0;
+}
+
+.contact-info,
+.cpy,
+.info,
+.address{
+    font-size: 18px;
+}
+
+.footer-icons i{
+    font-size: 18px;
+}
+
+ 
+}
+
+
+@media screen and (min-width: 1240px){
+
+.nav-bar{
+    width: 60%;
+}
+
+span,
+h2{
+    font-size: 30px;
+}
+
+.hand-crafted p{
+    padding-left: 250px;
+    padding-right: 300px;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+.mens,
+.trends,
+.glasses,
+.sale,
+.bags,
+.womens{
+    height: 315px;
+}
+
+.mens{
+    width: 103%;
+}
+
+h3{
+    font-size: 40px;
+    padding-top: 140px;
+}
+
+
+.grid-slide{
+    width: 25%;
+}
+
+.sign-up h2{
+    font-weight: 500;
+}
+
+.sign-up p{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+input{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

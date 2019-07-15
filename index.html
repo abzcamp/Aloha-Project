@@ -5,97 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i|Raleway&display=swap" rel="stylesheet">
-    <title>Aloha Apparel Co.</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7CRaleway:300,300i,500,500i&display=swap" rel="stylesheet"> 
+    <title>Aloha Apparel Co.</title><link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<div class="navigation">
 
-  <img src="images/aloha-logo.svg" alt=""> 
- <img src="images/cart-icon.svg" alt="">
- <nav>
-     <ul>
+    <div class="cart-logo">
+
+    <div class="nav-logo">
+    <img src="images/aloha-logo.svg">
+    </div>
+
+    <div class="carticon">
+    <img src="images/cart-icon.svg">
+    </div>
+
+    </div>
+    
+ <div class="nav-description">
+     <ul class="nav-bar">
         <li><a href="#about">About</a></li>
         <li><a href="#shop">Shop</a></li>
         <li><a href="#featured">Featured</a></li>
         <li><a href="#updates">Updates</a></li>
+    </ul>
+ </div>
 
-     </ul>
- </nav>
- </header>
+</div> 
+</header>
 
- <section class="banner">
-    <h1 class="a">New Collection</h1>
-    <p class="b">Summer 2019</p>
-</section>
+    <section class="banner">
+        <p class="new">New Collection</p>
+        <div class="title">
+        <h1>Spring/Summer</h1>
+        <p class="year">2016</p>
+        </div>
+    </section>
 
-<section class="style">
-    <h2>Hand-Crafted Styles</h2>
-    <p>Aloha Apparel Co.sells only the finest ready-to-travel clothing.Browse our current selection of products or sign-up for updates below.</p>
-</section>
+    <section class="hand-crafted">
+        <div class="crafted">
+        <h2>Hand-Crafted</h2>
+        <span>Styles</span>
+        </div>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+    </section>
 
-<section class="products">
-    <div class="wide mens">
-        <p>Mens</p>
+    <section class="items">
+        <div class="tablet-mode-1">
+        <div class="mens">
+            <h3>Men's</h3>
+        </div>
+        <div class="mobile-mode-1">
+        <div class="trends">
+            <h3>Trends</h3>
+        </div>
+        <div class="glasses">
+            <h3>Glasses</h3>
+        </div>
+        </div>
+        </div>
+        <div class="tablet-mode-2">
+        <div class="mobile-mode-2">   
+        <div class="sale">
+            <h3>Sale</h3>
+        </div>
+        <div class="bags">
+            <h3>Bags</h3>
+        </div>
+        </div> 
+        <div class="womens">
+            <h3>Womens</h3>
+        </div>
+        </div>
+    </section>
+
+    <div class="crafted products">
+    <h2>Most-Loved</h2>
+    <span>Products</span>
     </div>
-    <div class="square trends">
-        <p>Trends</p>
-    </div>
-    <div class="square glasses">
-         <p>Glasses</p>
-    </div>
-    <div class="square bags">
-        <p>Bags</p>
-     </div>
-     <div class="wide womens">
-        <p>Womens</p>
-    </div>
-</section>
 
-<section class="featured">
-    <h2>Most-Loved Products</h2>
-    <div class="product-wrapper">
-        <img src="images/blue-hipster-backpack.jpg" alt="">
-        <p>Bags</p>
-        <h3>Blue Hipster Backpack</h3>
-        <p>$69.00</p>
-    </div>
-</section>
+    <section class="gride-slider-section">
+        <div class="grid-slider-wrap">
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/blue-hipster-backpack.jpg" alt="">
+                    <p class="label">BAGS</p>
+                    <figcaption>Blue Hipster Backpack</figcaption>
+                    <p class="price">$69.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/blue-silk-dress.jpg" alt="">
+                    <p class="label">DRESSES</p>
+                    <figcaption>Blue Silk Dress</figcaption>
+                    <p class="price">$89.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/checked-stretch-dress.jpg" alt="">
+                    <p class="label">DRESSES</p>
+                    <figcaption>Checked Strech Dress</figcaption>
+                    <p class="price">$169.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/cotton-blue-shirt.jpg" alt="">
+                    <p class="label">SHIRTS</p>
+                    <figcaption>Cotton Blue Shirt</figcaption>
+                    <p class="price">$89.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/cotton-yellow-tshirt.jpg" alt="">
+                    <p class="label">SHIRTS</p>
+                    <figcaption>Cotton Yellow Tshirt</figcaption>
+                    <p class="price">$59.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="grid-slide">
+                <div class="grid-slide-inner">
+                    <img src="images/demin-overall-shorts.jpg" alt="">
+                    <p class="label">SHORTS</p>
+                    <figcaption>Denim Overall Shorts</figcaption>
+                    <p class="price">$69.00</p>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="newsletter">
-    <h2>Sign-Up for Updates</h2>
-    <p>
-        stay updated on our latest product releases, be first to find out about upcoming sales, and get 
-        free tips from our blog.Unsubscribe at any time.
-    
-    </p>
+    <section class="sign-up">
+        <div class="crafted products updates">
+        <h2>Sign-up for</h2>
+        <span>Updates</span>
+        </div>
+        <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog, unsubscribe at any time.</p>
 
-    <form>
-        <input type="password" placeholder="Enter your Email">
-        <input type="checkbox">
-    </form>
-</section>
+        <div class="sub-form">
+            <form class="for" name="myForm">
+            <input class="inp" type="text" id="email_id" name="email address" placeholder="email address" required="true">
+            <button class="subs" onclick="check(email_id);">Subscribe</button>
+            </form>
+       </div>
+
+    </section>
 
 <footer>
-   <section class="container-z">
-    <div class="z">
-        <p>© 2016 Aloha Apparel Co.</p>
-        <p>Powered by HTML and CSS.</p>
-        <p class="zz">604-604-6040.<a href="#">info@alohaapparel.com</a></p>
-        <p class="14">1490 W Broadway</p>
-        <p class="15">Vancouver, BC, Canada</p>
-    </div>
+    <section class="footer-description">
 
-    <div class="zx">
-         <i class="fab fa-facebook-f">Facebook</i>
-         <i class="fab fa-twitter">Twitter</i>
-         <i class="fab fa-instagram">Instagram</i>
-         <i class="fab fa-pinterest-square">Pintrest</i>
-         <i class="fab fa-google-plus-g">Google+</i>
-    </div>
-</section>  
+        <div class="contact-info">
+            <p class="cpy">© 2016 Aloha Apparel Co.</p>
+            <p class="cpy">Powered by HTML and CSS.</p>
+            <p class="info">604-604-6040.<a href="#">info@alohaapparel.com</a></p>
+            <p class="address">1490 W Broadway</p>
+            <p class="address">Vancouver, BC, Canada</p>
+        </div>
+
+        <div class="footer-icons">
+            
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fab fa-google-plus-g"></i>
+            
+        </div>
+
+        <div class="icons-description">
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Pinterest</li>
+                <li>Google</li>
+            </ul>
+        </div>
+
+    </section>
 </footer>
 
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
